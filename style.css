@@ -6,11 +6,20 @@ body{
     height: 90vh;
     background-image: url("coolBackground.jpg");
     background-size: 140%;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    font-size: 10px;
 }
 .headings{
     display: flex;
     position: absolute;
-    top: 20%;
+    top: 15%;
     color: #9d1c1c;
     font-family: 'Silkscreen', sans-serif;
 }
@@ -34,7 +43,7 @@ h1{
     justify-content: center;
     align-items: center;
 }
-#button-1, #button-2{
+.btn{
     font-size: 20px;
     padding: 10px 30px;
     border: none;
@@ -44,6 +53,10 @@ h1{
     font-family: 'Silkscreen', sans-serif;
     font-weight: bold;
     top: 40%;
+}
+.btn:hover{
+    transition: 0.7s;
+    box-shadow: 0 0px 30px 15px #ebcf55;
 }
 #button-1{
     position: absolute;
@@ -60,7 +73,7 @@ h1{
 }
 #girl{
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     z-index: -1;
 }
 #heart{
