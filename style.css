@@ -84,3 +84,32 @@ h1{
     50%{opacity: 1;}
     100%{opacity: 0;}
 }
+@media only screen and (max-width:768px){
+    body{
+        height: 100vh;
+        background-size: auto 100%;
+    }
+    .btn{
+        width: 70px;
+    }
+    #button-1{
+        margin-left: 130px;
+    }
+    #button-2{
+        margin-right: 130px;
+    }
+    h1{
+        margin: 10px;
+        font-size: 30px;
+    }
+    #girl{
+        width: 90%;
+        height: auto;
+        position: absolute;
+        bottom: 0px;
+    }
+    .btn {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+}
