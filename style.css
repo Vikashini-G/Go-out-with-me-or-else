@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url("coolBackground.jpg");
+    background-size: 140%;
+}
+.headings{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    color: #9d1c1c;
+    font-family: 'Silkscreen', sans-serif;
+}
+#question{
+    display: block;
+}
+#yayy{
+    animation: blink 2s linear infinite;
+}
+#yay{
+    text-shadow: 0 0 10px #f66b6b, 0 0 20px #f66b6b, 0 0 30px #f66b6b;
+    color: #b90e0e;
+    display: none;
+}
+h1{
+    font-size: 70px;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button-1, #button-2{
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: #b2eec8;
+    color: #333333;
+    font-family: 'Silkscreen', sans-serif;
+    font-weight: bold;
+    top: 40%;
+}
+#button-1{
+    position: absolute;
+    margin-right: 300px;
+}
+#button-2{
+    position: absolute;
+    margin-left: 300px;
+    transition: 0.5s;
+}
+#the-gifs{
+    display: flex;
+    justify-content: center;
+}
+#girl{
+    position: absolute;
+    bottom: 20px;
+    z-index: -1;
+}
+#heart{
+    display: none;
+}
+@keyframes blink {
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
