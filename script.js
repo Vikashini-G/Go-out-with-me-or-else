@@ -14,6 +14,7 @@ function heart(){
     yesButton.style.display = 'none';
 }
 function moveButton(){
+    noButton.style.marginLeft = '0';
     var x = Math.random() * ((window.innerWidth) - noButton.offsetWidth);
     var y = Math.random() * ((window.innerHeight) - noButton.offsetHeight);
     noButton.style.left = `${x}px`;
