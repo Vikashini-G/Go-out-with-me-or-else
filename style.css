@@ -9,6 +9,13 @@ body{
     margin: 0;
     padding: 0;
 }
+#logo{
+    height: 5%;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+}
 p{
     font-family: sans-serif;
     position: absolute;
@@ -54,13 +61,11 @@ h1{
     font-weight: bold;
     top: 40%;
 }
-.btn:hover{
-    transition: 0.7s;
-    box-shadow: 0 0px 30px 15px #ebcf55;
-}
 #button-1{
     position: absolute;
     margin-right: 300px;
+    animation: attention 2s linear infinite;
+    cursor: pointer;
 }
 #button-2{
     position: absolute;
@@ -78,6 +83,23 @@ h1{
 }
 #heart{
     display: none;
+}
+@keyframes attention {
+    0%{
+        box-shadow: none;
+    }
+    30%{
+        box-shadow: 0 0px 30px 15px #ebcf55;
+    }
+    50%{
+        box-shadow: 0 0px 30px 20px #e9c831;
+    }
+    70%{
+        box-shadow: 0 0px 30px 15px #ebcf55;
+    }
+    100%{
+        box-shadow: none;
+    }
 }
 @keyframes blink {
     0%{opacity: 0;}
